@@ -1,0 +1,45 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 604
+  ClientWidth = 888
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 280.000000000000000000
+    Position.Y = 32.000000000000000000
+    Text = 'TO DO LIST'
+    TabOrder = 0
+  end
+  object AddButton: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 1
+    Text = 'ADD'
+    OnClick = AddButtonClick
+  end
+  object TaskEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 208.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TasksListBox: TListBox
+    Position.X = 208.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = TasksListBoxItemClick
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+end

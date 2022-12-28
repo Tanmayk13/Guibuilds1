@@ -1,0 +1,7 @@
+inherited Form2_Windows: TForm2_Windows
+  DesignerMasterStyle = 0
+  inherited TasksListBox: TListBox
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+end
